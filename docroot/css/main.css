@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "open_sanssemibold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/open-sans.semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans.semibold-webfont.woff") format("woff"), url("../fonts/open-sans.semibold-webfont.ttf") format("truetype"), url("../fonts/open-sans.semibold-webfont.svg#open_sanssemibold") format("svg");
+}
+
+#tweetScrollSpeed{
+	display: none;
+}
+
+#backgroundColor{
+	display: none;
+}
+
+#fontColor{
+	display: none;
+}
+
+#verticalScroll {
+	display: none;
+}
+
+#width {
+	display: none;
+}
+
+#fp-tweets {
+	background: rgba(0, 186, 220, 0.91);
+	max-width: 100%;
+}
+
+#sp-fp-tweets-wrapper {
+	background: none;
+	background-size: cover;
+}
+
+#sp-fp-tweets-wrapper #fp-tweets * {
+	color: #fff;
+	font-family: 'open_sanssemibold';
+}
+
+.module {
+	margin-bottom: 20px;
+}
+
+#ModID107 {
+	width : 100%;
+}
+
+#configurationTwitter{
+	width: 500px;
+}
+
+.twitterSearchesNText{
+	padding: 0 0 15px 0;
+	line-height: normal;
+}
+
+#sp-fp-tweets-wrapper #fp-tweets {
+	padding: 0px !important;
+}
+
+.carousel .carousel-control {
+	top: auto;
+	bottom: 10px;
+	left: auto;
+	width: 23px;
+	height: 23px;
+	line-height: 19px;
+	display: block;
+	font-size: 23px;
+	text-align: center;
+	color: #fff;
+	background: #00badc;
+	border: 0;
+	opacity: 1;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.carousel .carousel-control {
+	top: 30% !important;
+}
+
+.carousel .carousel-control {
+  color: #fff !important;
+  background: black !important;
+  opacity: 0.2 !important;
+}
+
+.carousel .carousel-control:hover {
+  color: #fff !important;
+  background: black !important;
+  opacity: 0.4 !important;
+}
+
+.twitterSearchesNUser a:hover {
+	text-decoration: none;
+}

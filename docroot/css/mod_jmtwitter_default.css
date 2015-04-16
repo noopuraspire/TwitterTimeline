@@ -1,0 +1,75 @@
+.jmtwitterroll{
+	overflow: hidden;
+	padding: 0;
+}
+.jmtwitterroll .carousel{
+	padding: 0;
+	margin: 0;
+}
+/* Tweet content */
+.jmtwitterroll .carousel .item_slide{
+	padding: 0 50px;
+	text-align: center;
+}
+.jmtwitterroll .twitterIcon,
+.jmtwitterroll .twitterAvatar{
+	display: block;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+.jmtwitterroll .twitterIcon i{
+	font-size: 40px;
+	font-family: 'FontAwesome' !important;
+}
+
+.twitterSearchesNContainter{
+/* overflow: hidden; */
+	height: 100%;
+}
+.twitterSearchesNTime{
+	font-size: 13px;
+	color: rgb(136, 136, 136);
+	line-height: 1em;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+}
+.twitterSearchesNTweet{
+	padding: 15px 0px;
+	clear: left; 
+	left: 0px;
+}
+
+.twitterSearchesNText{
+	padding: 0 0 15px 0;
+	line-height: normal;
+}
+.twitterSearchesNUser{
+	font-weight: normal; 
+	font-size: 14px; 
+	font-family: open_sansbold;
+	display: block;
+	text-align: center;
+}
+.twitterSearchesNUser a{
+	text-decoration: none; 
+	color: rgb(59, 89, 152);
+}
+
+/* Nav Button */
+.jmtwitterroll .carousel-control{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 3px;
+	top: 30%;
+	bottom: auto;
+	margin: 0;
+	font-family: 'FontAwesome' !important;
+}
+.jmtwitterroll .carousel-control .fa{font-family: 'FontAwesome' !important;}
+.jmtwitterroll .carousel .carousel-control.right{
+	right: 0;
+}
+

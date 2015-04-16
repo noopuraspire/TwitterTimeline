@@ -1,0 +1,33 @@
+.jmtwitterroll {
+  overflow: hidden;
+  padding: 20px 0; }
+
+.twitterSearchesNContainter {
+  height: 100%; }
+
+.twitterSearchesNTime {
+  font-size: 13px;
+  color: #888888;
+  line-height: 1em;
+  margin-bottom: 10px; }
+
+.twitterSearchesNTweet {
+  padding: 15px 0px;
+  clear: left;
+  left: 0px; }
+
+.twitterSearchesNProfileImg {
+  float: left; }
+
+.twitterSearchesNText {
+  padding-left: 30px;
+  color: #000; }
+
+.twitterSearchesNUser {
+  font-weight: normal;
+  font-size: 14px; }
+
+.twitterSearchesNUser a {
+  text-decoration: none;
+  color: #3b5998; }
+
