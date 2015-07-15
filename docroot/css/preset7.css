@@ -1,0 +1,695 @@
+
+.clearfix {
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.hide-text {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: rgba(0, 0, 0, 0);
+    font: 0px/0 a;
+    text-shadow: none;
+}
+.input-block-level {
+    -moz-box-sizing: border-box;
+    display: block;
+    min-height: 30px;
+    width: 100%;
+}
+body {
+    color: #333333;
+    font-family: 'open_sansregular';
+    font-size: 13px;
+    line-height: 1.6em;
+}
+body.bg {
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+h1.page-error {
+    color: #113B53;
+}
+.btn, button, input[type="submit"], input[type="button"] {
+    background: none repeat scroll 0 0 #113B53;
+    border-bottom: 4px solid #081D29;
+    color: #FFFFFF;
+}
+.btn:hover, .btn:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus {
+    background: none repeat scroll 0 0 #081D29;
+    color: #FFFFFF;
+    outline: medium none;
+}
+.btn:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus {
+    outline: thin dotted #333333;
+    outline-offset: -2px;
+}
+.btn.active, .btn:active, button.active, button:active, input.active[type="submit"], input[type="submit"]:active, input.active[type="button"], input[type="button"]:active {
+    background: none repeat scroll 0 0 #081D29;
+    box-shadow: none;
+    outline: medium none;
+}
+.btn.disabled, .btn[disabled], button.disabled, button[disabled], input.disabled[type="submit"], input[type="submit"][disabled], input.disabled[type="button"], input[type="button"][disabled] {
+    background: none repeat scroll 0 0 #E6E6E6;
+    cursor: default;
+    outline: medium none;
+}
+.btn.btn-default, button.btn-default, input.btn-default[type="submit"], input.btn-default[type="button"] {
+    color: #FFFFFF;
+}
+.btn.btn-link, button.btn-link, input.btn-link[type="submit"], input.btn-link[type="button"] {
+    background: none repeat scroll 0 0 #00BADC;
+    border-bottom-color: #00A4C3;
+    color: #FFFFFF;
+}
+.btn.btn-link:hover, button.btn-link:hover, input.btn-link[type="submit"]:hover, input.btn-link[type="button"]:hover {
+    background: none repeat scroll 0 0 #00A4C3;
+}
+.btn.btn-white, button.btn-white, input.btn-white[type="submit"], input.btn-white[type="button"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #FFFFFF;
+}
+.btn.btn-white.btn-trans, button.btn-white.btn-trans, input.btn-white.btn-trans[type="submit"], input.btn-white.btn-trans[type="button"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.btn.btn-white.btn-trans:hover, .btn.btn-white.btn-trans:focus, .btn.btn-white.btn-trans:active, button.btn-white.btn-trans:hover, button.btn-white.btn-trans:focus, button.btn-white.btn-trans:active, input.btn-white.btn-trans[type="submit"]:hover, input.btn-white.btn-trans[type="submit"]:focus, input.btn-white.btn-trans[type="submit"]:active, input.btn-white.btn-trans[type="button"]:hover, input.btn-white.btn-trans[type="button"]:focus, input.btn-white.btn-trans[type="button"]:active {
+    background: none repeat scroll 0 0 #113B53;
+    outline: medium none;
+}
+.btn.btn-primary, button.btn-primary, input.btn-primary[type="submit"], input.btn-primary[type="button"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 2px solid #113B53;
+    color: #113B53;
+}
+.btn.btn-primary:hover, button.btn-primary:hover, input.btn-primary[type="submit"]:hover, input.btn-primary[type="button"]:hover {
+    background: none repeat scroll 0 0 rgba(17, 59, 83, 0.2);
+}
+.btn.btn-primary.link, button.btn-primary.link, input.btn-primary.link[type="submit"], input.btn-primary.link[type="button"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #00BADC;
+    color: #00BADC;
+}
+.btn.btn-primary.link:hover, button.btn-primary.link:hover, input.btn-primary.link[type="submit"]:hover, input.btn-primary.link[type="button"]:hover {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.3);
+}
+a:not(.btn) {
+    color: #00BADC;
+}
+a:hover:not(.btn) {
+    color: #113B53;
+}
+a.main-color:not(.btn) {
+    color: #113B53;
+}
+a.main-color:hover:not(.btn) {
+    color: #00BADC;
+}
+#sp-header-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#sp-header-wrapper #sp-menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#sp-header-wrapper #sp-menu ul.level-0 > li > a {
+    color: #113B53;
+}
+#sp-header-wrapper #sp-menu ul.level-0 > li:hover > a, #sp-header-wrapper #sp-menu ul.level-0 > li.active > a {
+    color: #00BADC;
+}
+#sp-header-wrapper #sp-menu .megacol div.sp-menu-group .sp-menu-group-title a {
+    color: #00BADC;
+}
+#sp-header-wrapper .sp-mobile-menu {
+    background: none repeat scroll 0 0 #113B53;
+}
+#sp-header-wrapper .sp-mobile-menu ul li {
+    background: none repeat scroll 0 0 #113B53;
+}
+#sp-header-wrapper .sp-mobile-menu ul li a {
+    color: #CCCCCC;
+}
+#sp-header-wrapper .sp-mobile-menu span.sp-menu-toggler i {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px;
+    color: #113B53;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+    width: 20px;
+}
+#sp-header-wrapper.header-ontop #sp-menu ul.level-0 > li > a {
+    color: #FFFFFF;
+}
+#sp-header-wrapper.header-ontop #sp-menu ul.level-0 > li:hover > a, #sp-header-wrapper.header-ontop #sp-menu ul.level-0 > li.active > a {
+    color: #00BADC;
+}
+#sp-header-wrapper.header-ontop #sp-menu ul.level-0 > li li:hover > a, #sp-header-wrapper.header-ontop #sp-menu ul.level-0 > li li.active > a {
+    color: #00BADC;
+}
+#sp-header-wrapper.fixed {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+}
+#sp-page-title-wrapper {
+    background: none repeat scroll 0 0 #113B53;
+    color: #FFFFFF;
+}
+.breadcrumbs {
+    border-color: #DDDDDD;
+}
+.breadcrumbs a {
+    color: #00BADC;
+}
+.breadcrumbs a:hover, .breadcrumbs a:active, .breadcrumbs a:focus {
+    color: #113B53;
+}
+#sp-feature-wrapper a:not(.btn) {
+    color: #00BADC;
+}
+#sp-feature-wrapper a:hover:not(.btn) {
+    color: #113B53;
+}
+#sp-fp-message-wrapper {
+    background: none repeat scroll 0 0 #00BADC;
+}
+#sp-fp-portfolio-wrapper h3.header {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+}
+#sp-fp-portfolio-wrapper ul#filters {
+    background: none repeat scroll 0 0 #00BADC;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#sp-fp-portfolio-wrapper ul#filters li {
+    margin-bottom: 10px;
+}
+#sp-fp-portfolio-wrapper ul#filters li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #00BADC;
+    font-size: 17px;
+    padding: 2px 18px;
+    text-transform: uppercase;
+}
+#sp-fp-portfolio-wrapper ul#filters li a:hover, #sp-fp-portfolio-wrapper ul#filters li a:active, #sp-fp-portfolio-wrapper ul#filters li a:focus {
+    box-shadow: 0 0 2px 2px #00BADC inset;
+    outline: medium none;
+}
+#sp-fp-portfolio-wrapper ul#filters li.current a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 2px 2px #00BADC inset;
+}
+#sp-fp-contact-wrapper {
+    background: none repeat scroll 0 0 #113B53;
+}
+#sp-fp-contact-wrapper .module h3.header {
+    color: #FFFFFF;
+}
+#sp-fp-icon-wrapper .module a {
+    color: #113B53;
+}
+#sp-fp-icon-wrapper .module a:hover {
+    color: #00BADC;
+}
+#sp-fp-latest-work-wrapper .module h3.header {
+    border-bottom: 1px solid #DDDDDD;
+    color: #113B53;
+}
+#sp-fp-latest-work-wrapper .module h3.header span {
+    border-bottom: 1px solid #00BADC;
+}
+#sp-fp-latest-work-wrapper .module .latestwork .slide-item-desc-warp {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.8);
+}
+#sp-fp-latest-work-wrapper .module .latestwork .nav-buttons {
+    color: #113B53;
+}
+#sp-fp-latest-work-wrapper .module .latestwork .nav-buttons span:hover {
+    color: #00BADC;
+}
+#sp-fp-news2-corporate-wrapper .container .jmnewspro.testinomial .testinomialUsersType {
+    color: #00BADC;
+}
+#sp-fp-team-wrapper.corporate .jmnewspro.testinomial .testinomialUsersType {
+    color: #113B53;
+}
+#sp-fp-testinomial-wrapper #fp-testinomial {
+    background: none repeat scroll 0 0 rgba(17, 59, 83, 0.95);
+}
+#fp-tweets {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.91);
+}
+#sp-bottom-wrapper {
+    background: none repeat scroll 0 0 #113B53;
+    color: #FFFFFF;
+}
+#sp-bottom-wrapper .module h3, #sp-bottom-wrapper .module .header {
+    color: #00BADC;
+}
+#sp-bottom-wrapper .module .jmnewspro.latestnewslist .jmnewspro-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#sp-bottom-wrapper .module .jmnewspro.latestnewslist .jmnewspro-item .title {
+    color: #00BADC;
+}
+#sp-bottom-wrapper .module .jmnewspro.latestnewslist .jmnewspro-item .title:hover {
+    color: #FFFFFF;
+}
+#sp-bottom-wrapper .module .jmnewspro.latestnewslist .jmnewspro-item .title:hover a {
+    color: #FFFFFF;
+}
+#sp-bottom-wrapper .module .jmsocials_wrap a:hover i {
+    color: #00BADC;
+}
+#sp-bottom-wrapper a:not(.btn) {
+    color: #00BADC;
+}
+#sp-bottom-wrapper a:hover:not(.btn) {
+    color: #FFFFFF;
+}
+#sp-footer-wrapper {
+    background: none repeat scroll 0 0 #113B53;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+#sp-footer-wrapper h3 {
+    color: #00BADC;
+}
+#sp-footer-wrapper a:not(.btn) {
+    color: #00BADC;
+}
+#sp-footer-wrapper a:hover:not(.btn) {
+    color: #113B53;
+}
+#sp-footer-wrapper ul {
+    display: inline-block;
+}
+#sp-footer-wrapper ul li {
+    display: inline-block;
+}
+#sp-footer-wrapper ul li + li {
+    margin-left: 10px;
+}
+#sp-footer-wrapper ul li a {
+    color: #FFFFFF;
+}
+#sp-footer-wrapper ul.nav {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#sp-footer-wrapper ul.nav li {
+    display: inline-block;
+}
+#sp-footer-wrapper ul.nav li + li {
+    margin-left: 10px;
+}
+#sp-footer-wrapper ul.nav li a {
+    color: #FFFFFF;
+    display: block;
+}
+#sp-footer-wrapper ul.nav li a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #00BADC;
+}
+#sp-footer-wrapper ul.nav li a:active, #sp-footer-wrapper ul.nav li a:focus {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.module h3.header, .moduletable h3.header {
+    color: #00BADC;
+}
+.module.title-grey h3.header, .moduletable.title-grey h3.header {
+    color: #333333;
+}
+.module.title-line h3.header, .moduletable.title-line h3.header {
+    border-bottom: 1px solid #DDDDDD;
+}
+.module.title-line h3.header span, .moduletable.title-line h3.header span {
+    border-bottom: 1px solid #00BADC;
+    display: inline-block;
+}
+.module.box-1 > div, .moduletable.box-1 > div {
+    background: none repeat scroll 0 0 #113B53;
+}
+.module.box-1 > div .mod-content *, .moduletable.box-1 > div .mod-content * {
+    border-color: rgba(255, 255, 255, 0.9);
+    color: #FFFFFF;
+}
+.module.box-2 > div, .moduletable.box-2 > div {
+    background: none repeat scroll 0 0 #113B53;
+}
+.module.box-2 > div .mod-content *, .moduletable.box-2 > div .mod-content * {
+    color: #FFFFFF;
+}
+.module.box-3 > div, .moduletable.box-3 > div {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.module.box-3 > div h3.header, .moduletable.box-3 > div h3.header {
+    color: #FFFFFF;
+}
+.module.box-3 > div .mod-content *, .moduletable.box-3 > div .mod-content * {
+    color: #FFFFFF;
+}
+.module.box-4 > div, .moduletable.box-4 > div {
+    background: none repeat scroll 0 0 #FCFCFC;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075);
+}
+.module.jm-xhtml-icontop [class^="icon-"], .module.jm-xhtml-icontop [class^="fa-"], .module.jm-xhtml-icontop [class*="icon-"], .module.jm-xhtml-icontop [class*="fa-"], .moduletable.jm-xhtml-icontop [class^="icon-"], .moduletable.jm-xhtml-icontop [class^="fa-"], .moduletable.jm-xhtml-icontop [class*="icon-"], .moduletable.jm-xhtml-icontop [class*="fa-"] {
+    background: none repeat scroll 0 0 #113B53;
+}
+.module.jm-xhtml-icontop [class^="icon-"]:hover:after, .module.jm-xhtml-icontop [class^="icon-"]:active:after, .module.jm-xhtml-icontop [class^="icon-"]:focus:after, .module.jm-xhtml-icontop [class^="fa-"]:hover:after, .module.jm-xhtml-icontop [class^="fa-"]:active:after, .module.jm-xhtml-icontop [class^="fa-"]:focus:after, .module.jm-xhtml-icontop [class*="icon-"]:hover:after, .module.jm-xhtml-icontop [class*="icon-"]:active:after, .module.jm-xhtml-icontop [class*="icon-"]:focus:after, .module.jm-xhtml-icontop [class*="fa-"]:hover:after, .module.jm-xhtml-icontop [class*="fa-"]:active:after, .module.jm-xhtml-icontop [class*="fa-"]:focus:after, .moduletable.jm-xhtml-icontop [class^="icon-"]:hover:after, .moduletable.jm-xhtml-icontop [class^="icon-"]:active:after, .moduletable.jm-xhtml-icontop [class^="icon-"]:focus:after, .moduletable.jm-xhtml-icontop [class^="fa-"]:hover:after, .moduletable.jm-xhtml-icontop [class^="fa-"]:active:after, .moduletable.jm-xhtml-icontop [class^="fa-"]:focus:after, .moduletable.jm-xhtml-icontop [class*="icon-"]:hover:after, .moduletable.jm-xhtml-icontop [class*="icon-"]:active:after, .moduletable.jm-xhtml-icontop [class*="icon-"]:focus:after, .moduletable.jm-xhtml-icontop [class*="fa-"]:hover:after, .moduletable.jm-xhtml-icontop [class*="fa-"]:active:after, .moduletable.jm-xhtml-icontop [class*="fa-"]:focus:after {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.module.jm-xhtml-icontop:hover [class^="icon-"], .module.jm-xhtml-icontop:hover [class^="fa-"], .module.jm-xhtml-icontop:hover [class*="icon-"], .module.jm-xhtml-icontop:hover [class*="fa-"], .module.jm-xhtml-icontop:active [class^="icon-"], .module.jm-xhtml-icontop:active [class^="fa-"], .module.jm-xhtml-icontop:active [class*="icon-"], .module.jm-xhtml-icontop:active [class*="fa-"], .module.jm-xhtml-icontop:focus [class^="icon-"], .module.jm-xhtml-icontop:focus [class^="fa-"], .module.jm-xhtml-icontop:focus [class*="icon-"], .module.jm-xhtml-icontop:focus [class*="fa-"], .moduletable.jm-xhtml-icontop:hover [class^="icon-"], .moduletable.jm-xhtml-icontop:hover [class^="fa-"], .moduletable.jm-xhtml-icontop:hover [class*="icon-"], .moduletable.jm-xhtml-icontop:hover [class*="fa-"], .moduletable.jm-xhtml-icontop:active [class^="icon-"], .moduletable.jm-xhtml-icontop:active [class^="fa-"], .moduletable.jm-xhtml-icontop:active [class*="icon-"], .moduletable.jm-xhtml-icontop:active [class*="fa-"], .moduletable.jm-xhtml-icontop:focus [class^="icon-"], .moduletable.jm-xhtml-icontop:focus [class^="fa-"], .moduletable.jm-xhtml-icontop:focus [class*="icon-"], .moduletable.jm-xhtml-icontop:focus [class*="fa-"] {
+    background: none repeat scroll 0 0 #113B53;
+}
+.module.jm-xhtml-icontop:hover [class^="icon-"]:after, .module.jm-xhtml-icontop:hover [class^="fa-"]:after, .module.jm-xhtml-icontop:hover [class*="icon-"]:after, .module.jm-xhtml-icontop:hover [class*="fa-"]:after, .module.jm-xhtml-icontop:active [class^="icon-"]:after, .module.jm-xhtml-icontop:active [class^="fa-"]:after, .module.jm-xhtml-icontop:active [class*="icon-"]:after, .module.jm-xhtml-icontop:active [class*="fa-"]:after, .module.jm-xhtml-icontop:focus [class^="icon-"]:after, .module.jm-xhtml-icontop:focus [class^="fa-"]:after, .module.jm-xhtml-icontop:focus [class*="icon-"]:after, .module.jm-xhtml-icontop:focus [class*="fa-"]:after, .moduletable.jm-xhtml-icontop:hover [class^="icon-"]:after, .moduletable.jm-xhtml-icontop:hover [class^="fa-"]:after, .moduletable.jm-xhtml-icontop:hover [class*="icon-"]:after, .moduletable.jm-xhtml-icontop:hover [class*="fa-"]:after, .moduletable.jm-xhtml-icontop:active [class^="icon-"]:after, .moduletable.jm-xhtml-icontop:active [class^="fa-"]:after, .moduletable.jm-xhtml-icontop:active [class*="icon-"]:after, .moduletable.jm-xhtml-icontop:active [class*="fa-"]:after, .moduletable.jm-xhtml-icontop:focus [class^="icon-"]:after, .moduletable.jm-xhtml-icontop:focus [class^="fa-"]:after, .moduletable.jm-xhtml-icontop:focus [class*="icon-"]:after, .moduletable.jm-xhtml-icontop:focus [class*="fa-"]:after {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.module .jmnewspro.default .slide-item-title, .moduletable .jmnewspro.default .slide-item-title {
+    color: #00BADC;
+}
+.module .jmnewspro.default .slide-item-title a, .moduletable .jmnewspro.default .slide-item-title a {
+    color: #00BADC;
+    font-family: 'open_sanslight';
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.module .jmnewspro.default .slide-item-title a:hover, .module .jmnewspro.default .slide-item-title a:active, .module .jmnewspro.default .slide-item-title a:focus, .moduletable .jmnewspro.default .slide-item-title a:hover, .moduletable .jmnewspro.default .slide-item-title a:active, .moduletable .jmnewspro.default .slide-item-title a:focus {
+    color: #113B53;
+}
+.module .jmnewspro.default span.slide-item-readmore, .moduletable .jmnewspro.default span.slide-item-readmore {
+    color: #113B53;
+}
+.module .jmnewspro.default span.slide-item-readmore a, .moduletable .jmnewspro.default span.slide-item-readmore a {
+    color: #113B53;
+    font-family: 'open_sansbold';
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.module .jmnewspro.default span.slide-item-readmore a:hover, .module .jmnewspro.default span.slide-item-readmore a:active, .module .jmnewspro.default span.slide-item-readmore a:focus, .moduletable .jmnewspro.default span.slide-item-readmore a:hover, .moduletable .jmnewspro.default span.slide-item-readmore a:active, .moduletable .jmnewspro.default span.slide-item-readmore a:focus {
+    color: #00BADC;
+}
+.module .jmnewspro.consilium-news1 .read-more, .moduletable .jmnewspro.consilium-news1 .read-more {
+    color: #113B53;
+}
+.module .jmnewspro.consilium-news1 .read-more:hover, .moduletable .jmnewspro.consilium-news1 .read-more:hover {
+    color: #00BADC;
+}
+.module .jmnewspro.consilium-news2 .slide-inner .read-more, .moduletable .jmnewspro.consilium-news2 .slide-inner .read-more {
+    color: #113B53;
+}
+.module .jmnewspro.consilium-news2 .slide-inner .read-more:hover, .moduletable .jmnewspro.consilium-news2 .slide-inner .read-more:hover {
+    color: #00BADC;
+}
+.module .jmnewspro.theTeam .theTeamUsersAvatarWrap .theTeamUserAvatarBorder:hover .circle-border, .moduletable .jmnewspro.theTeam .theTeamUsersAvatarWrap .theTeamUserAvatarBorder:hover .circle-border {
+    border-color: #00BADC;
+}
+.module .jmnewspro.theTeam .theTeamUsersType, .moduletable .jmnewspro.theTeam .theTeamUsersType {
+    color: #113B53;
+}
+.module .jmnewspro.theTeam .theTeamUserAdditionalInfoWrap a:hover, .moduletable .jmnewspro.theTeam .theTeamUserAdditionalInfoWrap a:hover {
+    color: #113B53;
+}
+.module .jmnewspro.theTeam .theTeamUserAdditionalInfoWrap a:hover:before, .moduletable .jmnewspro.theTeam .theTeamUserAdditionalInfoWrap a:hover:before {
+    color: #113B53;
+}
+.module .jmnewspro.portfolio a.slide-item-readmore, .moduletable .jmnewspro.portfolio a.slide-item-readmore {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.8);
+    color: #FFFFFF;
+}
+.module #filters li.current a, .module #filters li a:hover, .moduletable #filters li.current a, .moduletable #filters li a:hover {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.module .JMSkills .JMSkillsTitleWrap .JMSkillsTitle, .moduletable .JMSkills .JMSkillsTitleWrap .JMSkillsTitle {
+    color: #113B53;
+}
+.module .JMSkills .JMSkillsProgressBarWrap .JMSkillsProgressPercent, .moduletable .JMSkills .JMSkillsProgressBarWrap .JMSkillsProgressPercent {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.module .JMContactWrap .JMContactField input, .moduletable .JMContactWrap .JMContactField input {
+    border-radius: 0;
+    color: rgba(17, 59, 83, 0.26);
+}
+.module .JMContactWrap .JMContactButton input, .moduletable .JMContactWrap .JMContactButton input {
+    color: #113B53;
+}
+.module .rev_slider_wrapper .rev_slider .tp-caption.big_white, .moduletable .rev_slider_wrapper .rev_slider .tp-caption.big_white {
+    color: #00BADC;
+}
+.module .rev_slider_wrapper .rev_slider .tp-caption.big_white span, .moduletable .rev_slider_wrapper .rev_slider .tp-caption.big_white span {
+    border-bottom: 1px solid #00BADC;
+    color: #FFFFFF;
+}
+.module .rev_slider_wrapper .tparrows.tp-leftarrow, .moduletable .rev_slider_wrapper .tparrows.tp-leftarrow {
+    background: url("../../images/presets/preset7/leftarrow.png") no-repeat scroll center center #FFFFFF;
+}
+.module .rev_slider_wrapper .tparrows.tp-rightarrow, .moduletable .rev_slider_wrapper .tparrows.tp-rightarrow {
+    background: url("../../images/presets/preset7/rightarrow.png") no-repeat scroll center center #FFFFFF;
+}
+#SubCategoriesList .subCategoryTitleWrap {
+    border-color: #DDDDDD;
+}
+article .entry-title {
+    color: #00BADC;
+}
+article .entry-title:hover {
+    color: #113B53;
+}
+article .entry-title a {
+    color: #00BADC;
+}
+article .entry-title a:hover {
+    color: #113B53;
+}
+article .entry-meta.muted {
+    border-color: #DDDDDD;
+    color: #113B53;
+}
+article .entry-meta.muted .entry-info {
+    border-color: #113B53;
+}
+.page-header, .page-heading {
+    color: #00BADC;
+}
+.info-title {
+    color: #113B53;
+    font-weight: 300;
+}
+.list-striped li:hover, .list-striped dd:hover, .row-striped .row:hover, .row-striped .row-fluid:hover {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.list-striped li:hover .label-info, .list-striped li:hover .badge-info, .list-striped dd:hover .label-info, .list-striped dd:hover .badge-info, .row-striped .row:hover .label-info, .row-striped .row:hover .badge-info, .row-striped .row-fluid:hover .label-info, .row-striped .row-fluid:hover .badge-info {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.2);
+}
+.style-list.checked li:before {
+    color: #00BADC;
+}
+.style-list.check-sign li:before {
+    color: #00BADC;
+}
+.style-list.unstyled ul li, .style-list.unstyled ul .unstyled {
+    border-color: #00BADC;
+}
+.style-list.unstyled ul[class*="level"] > li a {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.style-tags a {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #555555;
+}
+.style-tags a:hover, .style-tags a:focus, .style-tags a:active {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+    transition: all 300ms linear 0s;
+}
+.style-tags a:hover:before, .style-tags a:focus:before, .style-tags a:active:before {
+    border-color: rgba(255, 255, 255, 0) #00BADC rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    transition: all 300ms linear 0s;
+}
+.style-tags a:hover:after, .style-tags a:focus:after, .style-tags a:active:after {
+    transition: all 300ms linear 0s;
+}
+.style-tags a.right:hover:before, .style-tags a.right:focus:before, .style-tags a.right:active:before {
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #00BADC;
+}
+.toggle h3 a {
+    background: none repeat scroll 0 0 #F2F2F2;
+    color: #00BADC;
+}
+.toggle h3 a i {
+    color: #00BADC;
+}
+.toggle.open h3 a {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+}
+.toggle.open h3 a i {
+    color: #FFFFFF;
+}
+.toggle > div {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+#tab1.nav {
+    border-bottom: 1px solid #00BADC;
+}
+#tab1.nav a:hover {
+    background: none repeat scroll 0 0 #00BADC;
+    border-bottom: 1px solid #00BADC;
+    color: #FFFFFF;
+    outline: medium none;
+}
+#tab1.nav > .active > a {
+    border-color: #00BADC #00BADC #FFFFFF;
+    outline: medium none;
+}
+#tab1.nav > .active > a:hover, #tab1.nav > .active > a:focus, #tab1.nav > .active > a:active {
+    border-color: #00BADC #00BADC #FFFFFF;
+    outline: medium none;
+}
+#tab2.nav a:hover {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+    outline: medium none;
+}
+#tab2.nav .active > a {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+    outline: medium none;
+}
+#tab3.nav {
+    border: 0 none;
+}
+#tab3.nav li {
+    padding: 0 20px;
+}
+#tab3.nav li + li {
+    border-left: 1px solid #DEDEDE;
+}
+#tab3.nav li:first-child {
+    padding-left: 0;
+}
+#tab3.nav a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 3px;
+    color: #113B53;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#tab3.nav a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom-color: #00BADC;
+    color: #113B53;
+    outline: medium none;
+}
+#tab3.nav > .active > a {
+    border-bottom-color: #00BADC;
+    outline: medium none;
+}
+#tab3.nav > .active > a:hover, #tab3.nav > .active > a:focus, #tab3.nav > .active > a:active {
+    border-bottom-color: #00BADC;
+    outline: medium none;
+}
+.testimonial .AuthorName {
+    color: #00BADC;
+}
+.carousel .carousel-control {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+}
+.carousel .carousel-control:hover {
+    background: none repeat scroll 0 0 #113B53;
+    color: #FFFFFF;
+}
+.gallery-filters a.active {
+    background: none repeat scroll 0 0 #00BADC;
+}
+.gallery-filters a.active:hover {
+    background: none repeat scroll 0 0 #00BADC;
+}
+h1.page-error, .jm-color {
+    color: #00BADC;
+}
+#k2Container div.itemListCategoriesBlock .itemListCategory {
+    border-color: #DDDDDD;
+}
+#k2Container div.itemListCategoriesBlock .itemListSubCategories .subCategoryContainer .subCategory .subCategory-inner .subCategoryTitleWrap {
+    border-color: #DDDDDD;
+}
+#k2Container div.itemListCategoriesBlock .itemListSubCategories .subCategoryContainer .subCategory .subCategory-inner .subCategoryTitleWrap .CatTitle {
+    color: #00BADC;
+}
+#k2Container.itemView .itemFooter {
+    border-color: #DDDDDD;
+}
+#k2Container.itemView.Portfolio .itemContentBlock h3.entry-title {
+    border-bottom: 1px solid #DDDDDD;
+}
+#k2Container.itemView.Portfolio .itemContentBlock h3.entry-title span {
+    border-bottom: 1px solid #00BADC;
+}
+#k2Container.itemView.Portfolio .itemContentBlock h3.entry-title:hover {
+    color: #00BADC;
+}
+#k2Container.itemView.Portfolio .itemAuthorRelated #jm-k2-related .k2-related-item-title {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.8);
+}
+#k2Container.userView .itemAuthorBlock {
+    border-color: #DDDDDD;
+}
+#Kunena a, #Kunena #ktab ul.menu li:hover a, #Kunena #ktab ul.menu li.active a {
+    color: #113B53;
+}
+#Kunena .kblock div.kheader, #Kunena .button, #Kunena .kbutton {
+    background: none repeat scroll 0 0 #113B53;
+}
+#Kunena .button, #Kunena .kbutton {
+    color: #FFFFFF !important;
+}
+#jm-videogalleries .jm-inverse {
+    transition: all 0.3s linear 0s;
+}
+#jm-videogalleries .jm-inverse:focus, #jm-videogalleries .jm-inverse:hover, #jm-videogalleries .jm-inverse:active, #jm-videogalleries .jm-inverse.current {
+    background: none repeat scroll 0 0 #00BADC;
+    color: #FFFFFF;
+    outline: medium none;
+    transition: all 0.3s linear 0s;
+}
+#jm-videogalleries .jmvideogalleries_videos_title {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.8);
+    color: #FFFFFF;
+}
+#jm-videogalleries .jmvideogalleries_videos_title .padding {
+    background: none repeat scroll 0 0 rgba(0, 186, 220, 0.8);
+    color: #FFFFFF;
+}
+#jm-videogalleries .jmvideogalleries_videos_title .padding .jmvideogalleries_title {
+    color: #FFFFFF;
+}
+#jm-videogalleries .jmvideogalleries_videos_title .padding .jmvideogalleries_title .fa-play {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+@media (max-width: 640px) {
+#sp-header-wrapper.header-ontop {
+    background: none repeat scroll 0 0 #113B53 !important;
+}
+}

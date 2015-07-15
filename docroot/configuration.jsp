@@ -26,10 +26,10 @@
 		</tr>	
 		<tr>
 			<td>
-				<aui:input label="Consumer Key" name="preferences--consumerKey--" type="text" value="<%= consumerKey %>"></aui:input>		
+				<aui:input label="Coustmer Key" name="preferences--consumerKey--" type="text" value="<%= consumerKey %>"></aui:input>		
 			</td>
 			<td class="right">
-				<aui:input label="Consumer Secret" name="preferences--consumerSecret--" type="text" value="<%= consumerSecret %>"></aui:input>
+				<aui:input label="Coustmer Secret" name="preferences--consumerSecret--" type="text" value="<%= consumerSecret %>"></aui:input>
 			</td>
 		</tr>
 		<tr>	

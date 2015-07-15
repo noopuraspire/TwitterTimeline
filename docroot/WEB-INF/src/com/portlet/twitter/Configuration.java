@@ -12,12 +12,6 @@ import org.apache.log4j.Logger;
 
 import com.liferay.portal.kernel.portlet.DefaultConfigurationAction;
 
-/**
- * @author Aspire Software
- * 
- * Configure Portlet
- *
- */
 public class Configuration extends DefaultConfigurationAction {
 	Logger log = Logger.getLogger(Configuration.class.getName());
 	/**
@@ -35,7 +29,6 @@ public class Configuration extends DefaultConfigurationAction {
 		portletPreferences.setValue("accessToken", portletPreferences.getValue("accessToken", ""));
 		portletPreferences.setValue("accessSecret", portletPreferences.getValue("accessSecret", ""));
 		portletPreferences.setValue("tweetScrollSpeed", portletPreferences.getValue("tweetScrollSpeed", ""));
-		// If scroll speed is empty, then it will set to default scrolling speed
 		if("".equals(portletPreferences.getValue("tweetScrollSpeed", "")) || " ".equals(portletPreferences.getValue("tweetScrollSpeed", "")) || null == (portletPreferences.getValue("tweetScrollSpeed", "")) ) {
 			portletPreferences.setValue("tweetScrollSpeed", "5000");
 		}
@@ -48,17 +41,11 @@ public class Configuration extends DefaultConfigurationAction {
 		portletPreferences.setValue("width", portletPreferences.getValue("width", ""));
 	}
 	
-	/* (non-Javadoc)
-	 * @see com.liferay.portal.kernel.portlet.DefaultConfigurationAction#render(javax.portlet.PortletConfig, javax.portlet.RenderRequest, javax.portlet.RenderResponse)
-	 * 
-	 * Render configuration page
-	 * Used for the purpose of autofilling radio button
-	 * 
-	 */
 	@Override
 	public String render(PortletConfig portletConfig,
 			RenderRequest renderRequest, RenderResponse renderResponse)
 			throws Exception {
+		// TODO Auto-generated method stub
 		log.debug("overidde render method");
 		PortletPreferences portletPreferences = renderRequest.getPreferences();
 		
